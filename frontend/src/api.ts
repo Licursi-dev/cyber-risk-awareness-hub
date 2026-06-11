@@ -18,9 +18,15 @@ export type ScenarioDetail = ScenarioListItem & {
 };
 
 export type SubmitAnswerResponse = {
+
   correct: boolean;
+
   points_awarded: number;
+
   explanation?: string;
+
+  already_attempted?: boolean;
+
 };
 
 /** Small helper: safe JSON parse */
@@ -64,7 +70,17 @@ function normaliseSubmitResponse(data: any): SubmitAnswerResponse {
   // explanation can appear as: explanation / detail / message
   const explanation = data?.explanation ?? data?.detail ?? data?.message ?? undefined;
 
-  return { correct, points_awarded, explanation };
+return {
+
+  correct,
+
+  points_awarded,
+
+  explanation,
+
+  already_attempted: Boolean(data?.already_attempted),
+
+};
 }
 
 export async function apiGetDomains(): Promise<Domain[]> {
