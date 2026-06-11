@@ -1,4 +1,3 @@
-console.log("🔥 BIG APP LOADED");
 import React, { useEffect, useMemo, useState } from "react";
 import {
   apiGetDomains,
@@ -21,7 +20,11 @@ type View =
   | { name: "admin" };
 
 export default function App() {
-  const [staffId, setStaffId] = useState<string>("Guest");
+  const [staffId, setStaffId] = useState<string>(() => {
+
+    return localStorage.getItem("staff_id") || "Guest";
+  
+  });
   const [view, setView] = useState<View>(() =>
     localStorage.getItem("staff_id") ? { name: "home" } : { name: "start" }
   );
@@ -204,12 +207,38 @@ export default function App() {
     setView({ name: "start" });
   }
 
-  function setStaffAndContinue() {
+  async function setStaffAndContinue() {
+
     const cleaned = staffId.trim();
+  
     if (!cleaned) return;
+  
     localStorage.setItem("staff_id", cleaned);
+  
     setStaffId(cleaned);
+  
     setView({ name: "home" });
+  
+    try {
+  
+      setLoadingCompletion(true);
+  
+      setCompletionError("");
+  
+      const c = await apiGetCompletion(cleaned);
+  
+      setCompletion(c);
+  
+    } catch (e: any) {
+  
+      setCompletionError(e?.message || "Failed to load progress");
+  
+    } finally {
+  
+      setLoadingCompletion(false);
+  
+    }
+  
   }
 
   async function doAdminReset() {
@@ -227,7 +256,7 @@ export default function App() {
       setAdminWorking(true);
       const res = await apiAdminResetProgress({
         pin: adminPin.trim(),
-        staff_id: staffId,
+        staff_id: adminTargetStaffId.trim(),
       });
 
       if (res?.error) setAdminStatus(`Error: ${res.error}`);
