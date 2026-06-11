@@ -253,7 +253,7 @@ SCENARIOS = [
     "domain": "malware",
     "title": "USB Drop Attack",
     "difficulty": "hard",
-    "question": "You find an unlabelled USB stick in the office car park. It could contain improtant information. What is the safest action?",
+    "question": "You find an unlabelled USB stick in the office car park. It could contain impportant information. What is the safest action?",
     "options": [
         {"id": "a", "text": "Leave it with reception or in a communal area so the owner can collect it."},
         {"id": "b", "text": "Plug it into a spare computer to identify the owner."},
