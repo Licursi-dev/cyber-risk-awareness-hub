@@ -134,6 +134,8 @@ As a result:
 
 Future versions could introduce database storage, user authentication, reporting dashboards and organisational management features.
 
+Purpose: The Cyber Risk & Awareness Hub is an interactive cyber security awareness platform designed to help users recognise, understand, and respond to common cyber threats through realistic workplace scenarios. The project demonstrates how scenario-based learning can improve cyber security awareness while showcasing full-stack application development using React, FastAPI, and Python.
+
 Copyright © 2026 Licursi.dev. All Rights Reserved.
 
 The Cyber Risk & Awareness Hub and all original code, training content,
@@ -145,6 +147,4 @@ This project is provided for portfolio and educational viewing purposes only.
 No permission is granted to copy, redistribute, modify, publish, sell or reuse any part of this project without the prior written permission of the author.
 
 
-Purpose
 
-This project was created to demonstrate how software development can be used to address real-world cyber security challenges. It combines cyber security education with practical application development and explores how interactive training can help reduce human error, which remains one of the most significant causes of successful cyber attacks.
