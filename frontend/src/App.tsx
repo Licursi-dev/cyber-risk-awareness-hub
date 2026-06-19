@@ -1,3 +1,4 @@
+
 import React, { useEffect, useMemo, useState } from "react";
 import {
   apiGetDomains,
@@ -675,17 +676,18 @@ export default function App() {
       {/* Fixed signature - SOLID background to prevent clash */}
       <div
         style={{
-          position: "fixed",
-          bottom: 20,
-          left: "50%",
-          transform: "translateX(-50%)",
+          position: "relative",
+          marginTop: 40,
           background: "#0b0d14",
           border: "1px solid rgba(0,255,255,0.35)",
           borderRadius: 8,
-          padding: "8px 18px",
+          padding: "6px 14px",
           textAlign: "center",
           letterSpacing: "1px",
           pointerEvents: "none",
+          width: "fit-content",
+          margin: "40px auto 0",
+          display: "block",
         }}
       >
         <div
