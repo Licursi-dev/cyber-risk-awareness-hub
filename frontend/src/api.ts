@@ -1,4 +1,4 @@
-const API_BASE = "http://f10em1lsbbmhmrm3gjy8yp0y.178.104.40.223.sslip.io";
+const API_BASE = "https://f10em1lsbbmhmrm3gjy8yp0y.178.104.40.223.sslip.io";
 
 export type Domain = { id: string; title: string };
 
