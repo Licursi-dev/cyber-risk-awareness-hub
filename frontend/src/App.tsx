@@ -346,7 +346,7 @@ export default function App() {
             placeholder="e.g. JSMITH or 10482"
             style={{
               width: "100%",
-              maxWidth: 620,
+              maxWidth: 480,
               padding: 14,
               borderRadius: 12,
               border: "1px solid rgba(255,255,255,0.2)",
