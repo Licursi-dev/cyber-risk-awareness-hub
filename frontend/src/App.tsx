@@ -284,7 +284,7 @@ export default function App() {
   };
 
   const btnStyle: React.CSSProperties = {
-    padding: "10px 14px",
+    padding: "14px 22px",
     borderRadius: 12,
     border: "1px solid rgba(255,255,255,0.15)",
     background: "rgba(0,0,0,0.35)",
@@ -292,7 +292,7 @@ export default function App() {
     opacity: 0.95,
     cursor: "pointer",
     transition: "all 0.15s ease",
-    fontSize: 16,
+    fontSize: 18,
   };
 
   const smallBtnStyle: React.CSSProperties = {
