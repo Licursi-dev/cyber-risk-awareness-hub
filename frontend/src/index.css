@@ -132,3 +132,18 @@ button:focus-visible {
 .crah-btn {
   cursor: pointer;
 }
+
+@media (max-width: 600px) {
+  input {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+
+
+
+
+
+
