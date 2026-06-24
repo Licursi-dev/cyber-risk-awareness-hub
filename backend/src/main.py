@@ -14,6 +14,7 @@ app.add_middleware(
         "http://localhost:5173",
         "http://127.0.0.1:5173",
         "http://dvteiiw99nz3y2svrguosici.178.104.40.223.sslip.io"
+        "https://cyber.licursi.dev"
     ],
     allow_credentials=True,
     allow_methods=["*"],
