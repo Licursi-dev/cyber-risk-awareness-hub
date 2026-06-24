@@ -141,16 +141,20 @@ button:focus-visible {
   }
 }
 
-input {
-
-  width: 100%;
-
-  max-width: 100%;
-
+* {
   box-sizing: border-box;
-
 }
 
+@media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  input,
+  button {
+    max-width: 100%;
+  }
+}
 
 
 
