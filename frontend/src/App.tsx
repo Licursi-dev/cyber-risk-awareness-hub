@@ -337,7 +337,7 @@ export default function App() {
 
       {view.name === "start" && (
         <div style={{ maxWidth: 900 }}>
-          <h2 style={{ fontSize: 40, marginTop: 10 }}>Start</h2>
+          <div style={{ height: 48 }} />
           <p style={{ opacity: 0.75, fontSize: 18 }}>
             Enter your staff ID to begin. This links your progress to you (server-side).
           </p>
