@@ -10,7 +10,7 @@ The application provides an engaging alternative to traditional cyber security a
 
 Project Inspiration
 
-While studying cyber security, I learned that approximately 80% of cyber attacks involve some form of human error. This statistic highlighted an important challenge faced by organisations: even with strong technical security controls in place, a single mistake by a user can still result in a successful attack.
+While studying cyber security,human error contributes to many cyber incidents. This highlighted an important challenge faced by organisations: even with strong technical security controls in place, a single mistake by a user can still result in a successful attack.
 
 This led me to consider how staff training could be improved to help reduce human-related security incidents.
 
@@ -134,7 +134,7 @@ As a result:
 
 Future versions could introduce database storage, user authentication, reporting dashboards and organisational management features.
 
-Purpose: The Cyber Risk & Awareness Hub is an interactive cyber security awareness platform designed to help users recognise, understand, and respond to common cyber threats through realistic workplace scenarios. The project demonstrates how scenario-based learning can improve cyber security awareness while showcasing full-stack application development using React, FastAPI, and Python.
+Purpose: This project was created as a proof of concept for a more engaging approach to workplace cyber security training. It also demonstrates my ability to design and build a full-stack product—from the learning experience and user interface to API development, data validation, scoring and progress tracking.
 
 Copyright © 2026 Licursi.dev. All Rights Reserved.
 
